@@ -1,24 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { CreateJobFormOne } from "./pages/CreateJobFormOne";
+import { CreateJobFormTwo } from "./pages/CreateJobFormTwo";
+import { JobDescList } from "./pages/JobDescList";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="flex flex-col items-center gap-10 p-2.5">
+        <CreateJobFormOne />
+        <CreateJobFormTwo />
+        <JobDescList />
+      </div>
+    </>
   );
 }
 
